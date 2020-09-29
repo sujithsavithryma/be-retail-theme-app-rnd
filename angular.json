@@ -123,6 +123,46 @@
 					}
 				}
 			}
+		},
+		"be-theme": {
+			"projectType": "library",
+			"root": "projects/be-theme",
+			"sourceRoot": "projects/be-theme/src",
+			"prefix": "lib",
+			"architect": {
+				"build": {
+					"builder": "@angular-devkit/build-angular:ng-packagr",
+					"options": {
+						"tsConfig": "projects/be-theme/tsconfig.lib.json",
+						"project": "projects/be-theme/ng-package.json"
+					},
+					"configurations": {
+						"production": {
+							"tsConfig": "projects/be-theme/tsconfig.lib.prod.json"
+						}
+					}
+				},
+				"test": {
+					"builder": "@angular-devkit/build-angular:karma",
+					"options": {
+						"main": "projects/be-theme/src/test.ts",
+						"tsConfig": "projects/be-theme/tsconfig.spec.json",
+						"karmaConfig": "projects/be-theme/karma.conf.js"
+					}
+				},
+				"lint": {
+					"builder": "@angular-devkit/build-angular:tslint",
+					"options": {
+						"tsConfig": [
+							"projects/be-theme/tsconfig.lib.json",
+							"projects/be-theme/tsconfig.spec.json"
+						],
+						"exclude": [
+							"**/node_modules/**"
+						]
+					}
+				}
+			}
 		}
 	},
 	"defaultProject": "be-theme-app"
