@@ -4,9 +4,13 @@ import { BeThemeComponent } from './be-theme.component';
 
 
 @NgModule({
-  declarations: [BeThemeComponent],
+  declarations: [
+	  BeThemeComponent
+	],
   imports: [
   ],
-  exports: [BeThemeComponent]
+  exports: [
+	  BeThemeComponent
+	]
 })
 export class BeThemeModule { }

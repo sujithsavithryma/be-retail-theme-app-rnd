@@ -128,7 +128,7 @@
 			"projectType": "library",
 			"root": "projects/be-theme",
 			"sourceRoot": "projects/be-theme/src",
-			"prefix": "lib",
+			"prefix": "be",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",

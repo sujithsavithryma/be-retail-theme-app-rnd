@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 // import for dev purpose
-import { BeThemeModule } from 'projects/be-theme/src/public-api';
+// import { BeThemeModule } from 'projects/be-theme/src/public-api';
+import { LayoutModule } from 'projects/be-theme/src/lib/core/layout/publi-api';
 
 @NgModule({
 	declarations: [
@@ -11,7 +12,8 @@ import { BeThemeModule } from 'projects/be-theme/src/public-api';
 	],
 	imports: [
 		BrowserModule,
-		BeThemeModule
+		// BeThemeModule,
+		LayoutModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]
