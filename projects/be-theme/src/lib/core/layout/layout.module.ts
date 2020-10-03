@@ -6,13 +6,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { ViewComponent } from './view/view.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { ToolbarContentComponent } from './toolbar-content/toolbar-content.component';
 
 
 
 @NgModule({
 	declarations: [
 		ViewComponent,
-		ToolbarComponent
+		ToolbarComponent,
+		ToolbarContentComponent
 	],
 	imports: [
 		CommonModule,
@@ -22,7 +24,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 	],
 	exports: [
 		ViewComponent,
-		ToolbarComponent
+		ToolbarComponent,
+		ToolbarContentComponent
 	]
 })
 export class LayoutModule { }
