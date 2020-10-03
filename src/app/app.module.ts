@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 // import { BeThemeModule } from 'projects/be-theme/src/public-api';
 import { LayoutModule } from 'projects/be-theme/src/lib/core/layout/publi-api';
 import { ComponentsModule } from 'projects/be-theme/src/lib/core/components/public-api';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
 	declarations: [
@@ -15,7 +16,8 @@ import { ComponentsModule } from 'projects/be-theme/src/lib/core/components/publ
 		BrowserModule,
 		// BeThemeModule,
 		LayoutModule,
-		ComponentsModule
+		ComponentsModule,
+		RouterModule.forRoot([])
 	],
 	providers: [],
 	bootstrap: [AppComponent]

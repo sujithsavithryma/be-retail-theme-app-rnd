@@ -156,6 +156,7 @@ $mat-primary: (
 	lighter: #b9daec,
 	darker: #0c65aa,
 	200: #1582c0, // For slide toggle,
+	900: #064e85,
 	contrast : (
 		main: $light-primary-text,
 		lighter: $dark-primary-text,
@@ -247,4 +248,15 @@ $altTheme: mat-dark-theme($theme-primary, $theme-accent, $theme-warn);
 
 .mat-toolbar-row, .mat-toolbar-single-row {
     height: $toolbar-height;
+}
+
+.nav-item:hover, .nav-item.nav-active {
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&.nav-active{
+		border-bottom-color: mat-color($theme-primary, darker);
+		background: mat-color($theme-primary, 900);
+	}
 }

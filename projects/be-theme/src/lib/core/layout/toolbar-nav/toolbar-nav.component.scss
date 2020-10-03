@@ -1,0 +1,20 @@
+:host, ul, li {
+	height: 100%;
+}
+ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-item {
+	list-style: none;
+	padding: 4px 10px;
+	display: flex;
+	align-items: center;
+	outline: none;
+	cursor: pointer;
+	user-select: none;
+	&:focus {
+		outline: none;
+	}
+}
