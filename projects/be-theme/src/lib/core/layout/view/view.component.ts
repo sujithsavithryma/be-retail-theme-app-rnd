@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
 	selector: 'be-view',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewComponent implements OnInit {
 
+	@Input() theme: 'light' | 'dark' = 'light';
 	constructor() { }
 
 	ngOnInit(): void {

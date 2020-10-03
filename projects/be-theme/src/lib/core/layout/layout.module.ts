@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { ViewComponent } from './view/view.component';
 
@@ -14,7 +15,8 @@ import { ViewComponent } from './view/view.component';
 	imports: [
 		CommonModule,
 		FlexLayoutModule,
-		MatSidenavModule
+		MatSidenavModule,
+		MatToolbarModule
 	],
 	exports: [
 		ViewComponent
