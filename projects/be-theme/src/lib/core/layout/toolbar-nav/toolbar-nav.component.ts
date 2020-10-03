@@ -9,8 +9,7 @@ import { BeNav } from './toolbar-nav.model';
 export class ToolbarNavComponent implements OnInit {
 
 	@Input() navs: BeNav[] = [
-		{ name: 'Components', link: '' },
-		{ name: 'Docs', link: '/docs' }
+		{ name: 'Components', link: '' }
 	];
 	constructor() { }
 
