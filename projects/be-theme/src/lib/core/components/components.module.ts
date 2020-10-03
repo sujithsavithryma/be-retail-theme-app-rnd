@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 
-import { AppNameComponent } from './app-name/app-name.component';
+import { AppNameTitle } from './app-title/app-title.component';
 
 
 @NgModule({
 	declarations: [
-		AppNameComponent
+		AppNameTitle
 	],
 	imports: [
 		CommonModule,
 		MatButtonModule
 	],
 	exports: [
-		AppNameComponent
+		AppNameTitle
 	]
 })
 export class ComponentsModule { }
