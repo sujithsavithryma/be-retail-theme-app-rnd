@@ -12,22 +12,9 @@
 		<ng-container *ngFor="let menu of navs">
 			<li class="list-item" [routerLink]="menu?.link" routerLinkActive="nav-active">
 				<button mat-button>
-					{{ menu?.translationKey  }}
+					{{ menu.name  }}
 				</button>
 			</li>
 		</ng-container>
 	</ul>
-
-
-	<ng-container *ngIf="mode === 'mobile'">
-		<div class="application-info" fxLayout="column">
-			<h3 class="username">{{ user?.firstName }} {{ user?.lastName }}</h3>
-			<span class="userrole">{{ user.role }}</span>
-		</div>
-		<mat-nav-list class="menu-list-mobile">
-			<a mat-list-item [routerLink]="menu?.link" routerLinkActive="route-active-mobile"
-				*ngFor="let menu of navs">
-				{{ menu?.translationKey | translate }}</a>
-		</mat-nav-list>
-	</ng-container>
 </ng-container>

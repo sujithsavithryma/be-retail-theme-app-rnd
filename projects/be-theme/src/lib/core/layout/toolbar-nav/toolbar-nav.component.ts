@@ -8,20 +8,8 @@ import { BeNav } from './toolbar-nav.model';
 })
 export class ToolbarNavComponent implements OnInit {
 
-	@Input() navs: BeNav[] = [
-		{
-			name: 'Price Protection',
-			translationKey: 'PriceProtectionTab',
-			link: ''
-		},
-		{
-			name: 'Facturations',
-			translationKey: 'Facturation',
-			link: '/facturations'
-		}
-	];
+	@Input() navs: BeNav[] = [];
 
-	@Input() mode: 'mobile' | 'desktop' = 'desktop';
 	@Input() navStyle: number = 1;
 
 	constructor() { }
