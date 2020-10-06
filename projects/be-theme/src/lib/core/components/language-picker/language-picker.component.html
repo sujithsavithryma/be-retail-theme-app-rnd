@@ -1,0 +1,9 @@
+<mat-menu #appMenu="matMenu" yPosition="above">
+	<div *ngFor="let lang of availabelLang" mat-menu-item (click)="changeLanguage(lang.language)">
+		{{ lang.label  }}
+	</div>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="appMenu" class="lan-btn">
+	{{ selectedLang  }}
+</button>
