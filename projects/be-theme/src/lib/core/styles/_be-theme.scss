@@ -2,8 +2,18 @@
 @import 'be-theme-mixin';
 @import 'be-typography';
 @import 'be_default-theme.scss';
-@import 'be-common';
 
 @include mat-core($fontConfig);
 
+$theme: mat-light-theme($primary, $accent, $warn);
+$altTheme: mat-dark-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);
 @include beTheme($theme);
+
+.dark-theme {
+	@include angular-material-theme($altTheme);
+	@include beTheme($altTheme);
+
+}
+
+@import 'be-common';
