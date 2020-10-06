@@ -3,6 +3,9 @@
 
 @import 'be-variables';
 
+@import '../layout/toolbar-nav/toolbar-nav-theme.scss';
+
 @mixin beTheme($theme) {
 
+	@include toolbar-nav-theme($theme);
 }

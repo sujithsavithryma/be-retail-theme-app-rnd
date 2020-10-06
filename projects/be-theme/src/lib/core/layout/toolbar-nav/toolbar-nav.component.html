@@ -1,9 +1,33 @@
-<ul>
-	<li *ngFor="let nav of navs" matRipple class="nav-item mat-body-2" [routerLink]="nav.link" routerLinkActive="nav-active">
-		{{ nav.name }}
-	</li>
-</ul>
+<ng-container *ngIf="navStyle === 1">
+	<ul class="be-theme-nav nav-1" *ngIf="mode === 'desktop'">
+		<li *ngFor="let nav of navs" matRipple class="list-item" [routerLink]="nav.link"
+			routerLinkActive="nav-active">
+			{{ nav.name }}
+		</li>
+	</ul>
+</ng-container>
 
-<!-- <a mat-button *ngFor="let nav of navs"  class="nav-item mat-body-2" [routerLink]="nav.link" routerLinkActive="nav-active">
-	{{ nav.name }}
-</a> -->
+<ng-container *ngIf="navStyle === 2">
+	<ul class="be-theme-nav nav-2" *ngIf="mode === 'desktop'">
+		<ng-container *ngFor="let menu of navs">
+			<li class="list-item" [routerLink]="menu?.link" routerLinkActive="nav-active">
+				<button mat-button>
+					{{ menu?.translationKey  }}
+				</button>
+			</li>
+		</ng-container>
+	</ul>
+
+
+	<ng-container *ngIf="mode === 'mobile'">
+		<div class="application-info" fxLayout="column">
+			<h3 class="username">{{ user?.firstName }} {{ user?.lastName }}</h3>
+			<span class="userrole">{{ user.role }}</span>
+		</div>
+		<mat-nav-list class="menu-list-mobile">
+			<a mat-list-item [routerLink]="menu?.link" routerLinkActive="route-active-mobile"
+				*ngFor="let menu of navs">
+				{{ menu?.translationKey | translate }}</a>
+		</mat-nav-list>
+	</ng-container>
+</ng-container>

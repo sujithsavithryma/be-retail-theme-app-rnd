@@ -1,0 +1,32 @@
+@mixin toolbar-nav-theme($theme) {
+	$primary: map-get($theme, primary);
+
+	.nav-1 {
+		li {
+			&.nav-active {
+				border-bottom-color: mat-color($primary, darker);
+				background: mat-color($primary, 900);
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+		}
+	}
+
+	.nav-2 {
+		li {
+			&.nav-active {
+				button {
+					background: white;
+					color: mat-color($primary, 500);
+				}
+			}
+
+		}
+	}
+
+
+
+}
