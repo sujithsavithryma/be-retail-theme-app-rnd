@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
-import { BeThemeComponent } from './be-theme.component';
-
-
+import { BeComponentsModule } from './core/components/public-api';
+import { BeLayoutModule } from './core/layout/publi-api';
 
 @NgModule({
-  declarations: [
-	  BeThemeComponent
+	declarations: [],
+	imports: [
+		BeComponentsModule,
+		BeLayoutModule
 	],
-  imports: [
-  ],
-  exports: [
-	  BeThemeComponent
-	]
+	exports: []
 })
 export class BeThemeModule { }

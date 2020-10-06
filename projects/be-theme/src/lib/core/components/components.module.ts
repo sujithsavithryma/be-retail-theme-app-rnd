@@ -17,4 +17,4 @@ import { AppNameTitle } from './app-title/app-title.component';
 		AppNameTitle
 	]
 })
-export class ComponentsModule { }
+export class BeComponentsModule { }

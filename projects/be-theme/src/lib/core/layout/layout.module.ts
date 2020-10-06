@@ -13,7 +13,6 @@ import { ToolbarContentComponent } from './toolbar-content/toolbar-content.compo
 import { ToolbarNavComponent } from './toolbar-nav/toolbar-nav.component';
 
 
-
 @NgModule({
 	declarations: [
 		ViewComponent,
@@ -37,4 +36,4 @@ import { ToolbarNavComponent } from './toolbar-nav/toolbar-nav.component';
 		ToolbarNavComponent
 	]
 })
-export class LayoutModule { }
+export class BeLayoutModule { }
