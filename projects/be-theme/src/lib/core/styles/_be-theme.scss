@@ -1,2 +1,9 @@
 @import 'reset';
-@import 'be-mat-theme';
+@import 'be-theme-mixin';
+@import 'be-typography';
+@import 'be_default-theme.scss';
+@import 'be-common';
+
+@include mat-core($fontConfig);
+
+@include beTheme($theme);
