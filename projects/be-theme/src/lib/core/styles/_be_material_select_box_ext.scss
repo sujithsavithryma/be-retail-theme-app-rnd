@@ -1,0 +1,17 @@
+::ng-deep {
+	.mat-form-field-wrapper {
+	  	padding-bottom: 0;
+	}
+
+	.mat-form-field-appearance-outline .mat-form-field-infix {
+	  	padding: .4em 0 .7em 0;
+	}
+
+	.mat-form-field-appearance-outline {
+		&:not(.mat-form-field-should-float) {
+			.mat-form-field-label {
+				top: 1.3em;
+			}
+		}
+	}
+}
