@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../projects/be-theme/src/lib/core/styles/be-theme';
 // @import '@be-retail/be-theme/be-theme';
+@import '~@angular/material/theming';
+@import '../dist/be-theme/theming';
+
+@include mat-core();
+
+
+$demo-primary: mat-palette($mat-indigo);
+$demo-accent: mat-palette($mat-green, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$demo-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$demo-theme: mat-light-theme($demo-primary, $demo-accent, $demo-warn);
+
+@include angular-material-theme($demo-theme);
+@include be-material-extended-theme($demo-theme);

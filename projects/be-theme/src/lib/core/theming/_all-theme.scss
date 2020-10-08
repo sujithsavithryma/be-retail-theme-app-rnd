@@ -1,6 +1,6 @@
 // Import all the theming functionality.
-
+@import '../layout/toolbar-nav/toolbar-nav-theme';
 // Create a theme.
-@mixin be-material-extended-theme($theme-or-color-config) {
-
+@mixin be-material-extended-theme($theme) {
+	@include toolbar-nav-theme($theme);
 }
