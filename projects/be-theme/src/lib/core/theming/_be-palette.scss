@@ -1,0 +1,66 @@
+// blue
+$be-blue: (
+	'50': 'e3f0f7',
+	'100': 'b9daec',
+	'200': '8ac1e0',
+	'300': '5ba8d3',
+	'400': '3895c9',
+	'500': '1582c0',
+	'600': '127aba',
+	'700': '0f6fb2',
+	'800': '0c65aa',
+	'900': '06529c',
+	'A100': 'c8e1ff',
+	'A200': '95c5ff',
+	'A400': '62a9ff',
+	'A700': '489bff',
+	contrast: (
+		50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: white
+	)
+);
+
+$be-green: (
+	'50': 'e8f0e4',
+	'100': 'c5dbbb',
+	'200': '9ec38e',
+	'300': '77aa60',
+	'400': '5a983e',
+	'500': '3d861c',
+	'600': '377e19',
+	'700': '2f7314',
+	'800': '276911',
+	'900': '1a5609',
+	'A100': '9eff8b',
+	'A200': '73ff58',
+	'A400': '48ff25',
+	'A700': '33ff0b',
+	contrast: (
+		50: $black-87-opacity,
+        100: $black-87-opacity,
+        200: $black-87-opacity,
+        300: $black-87-opacity,
+        400: $black-87-opacity,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+        A100: $black-87-opacity,
+        A200: $black-87-opacity,
+        A400: $black-87-opacity,
+        A700: white
+	)
+);

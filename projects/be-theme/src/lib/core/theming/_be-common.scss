@@ -1,0 +1,11 @@
+@import 'be-variables';
+
+.mat-sidenav-container {
+	height: 100%;
+}
+
+
+.be-toolbar-content {
+	height: calc(100% - #{$toolbar-height});
+	background: transparent;
+}
