@@ -1,7 +1,7 @@
 // Import all the theming functionality.
 @import '../../../../../../node_modules/@angular/material/theming';
 @import './reset';
-@import './be-common';
+@import './core';
 
 @import '../layout/toolbar-nav/toolbar-nav-theme';
 @import '../layout/toolbar/toolbar-theme';
