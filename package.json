@@ -7,7 +7,8 @@
 		"copy:theme-assets": "cpy ./projects/be-theme/assets/* ./dist/be-theme/assets",
 		"copy:theme-styles": "cpy ./projects/be-theme/src/lib/core/styles ./dist/be-theme/lib/core/styles",
 		"build": "ng build be-theme && npm run copy:theme-assets && npm run copy:theme-styles",
-		"build:theme": "ng build be-theme && npm run copy:theme-assets && npm run copy:theme-styles",
+		"build:theme": "ng build be-theme && npm run build:theme-scss",
+		"build:theme-scss": "scss-bundle -c projects/be-theme/scss-bundle.config.json",
 		"test": "ng test",
 		"lint": "ng lint",
 		"e2e": "ng e2e"
@@ -28,6 +29,7 @@
 		"@ngx-translate/core": "^13.0.0",
 		"@ngx-translate/http-loader": "^6.0.0",
 		"rxjs": "~6.6.0",
+		"scss-bundle": "^3.1.2",
 		"tslib": "^2.0.0",
 		"zone.js": "~0.10.2"
 	},

@@ -1,0 +1,7 @@
+{
+	"bundlerOptions": {
+		"entryFile": "./projects/be-theme/src/lib/core/theming/_all-theme.scss",
+		"outFile": "./dist/be-theme/_theming.scss",
+		"includePaths": []
+	}
+}
