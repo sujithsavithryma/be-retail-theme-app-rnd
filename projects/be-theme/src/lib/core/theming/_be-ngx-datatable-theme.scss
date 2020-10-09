@@ -2,7 +2,7 @@
 
 .smart-data-table {
 	height: calc(100% - 0px);
-	font-size: 12px;
+	// font-size: 12px;
 	.datatable-body-cell, .datatable-header-cell {
 		.datatable-body-cell-label, .datatable-header-cell-template-wrap {
 			width: 100%;
@@ -78,7 +78,8 @@
 	$datatable-summary-row-background: #ddd !default;
 	$datatable-summary-row-background-hover: #ddd !default;
 
-	$datatable-col-padding: 0.65rem;
+	// $datatable-col-padding: 0.65rem;
+	$datatable-col-padding: 0.35rem;
 	$datatable-row-padding: 0.4rem 0.65rem;
 
 	.ngx-datatable.smart-data-table {

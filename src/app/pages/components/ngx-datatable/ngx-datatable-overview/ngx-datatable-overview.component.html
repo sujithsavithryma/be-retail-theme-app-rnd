@@ -1,4 +1,26 @@
-<div>
+<div class="ngx-datatble-overview">
+	<p>Ngx datatable is a third party library we are using in our applicatios.</p>
+
+	<h2 class="subheading-2">Installing</h2>
+	<p>You can grab the latest release from the Releases Page in Github or via NPM.</p>
+	<div class="highlite-area">
+		<span class="highlight">
+			npm install @swimlane/ngx-datatable
+		</span>
+	</div>
+	<h3>CSS</h3>
+	<p>Import scss file to apply our theme style</p>
+	<div class="highlite-area">
+		<span class="highlight">
+			@import '~@be-retail/be-theme/lib/styles/be-ngx-datatable-theme';
+		</span>
+	</div>
+	<p>Apply the mixin</p>
+	<div class="highlite-area">
+		<span class="highlight">
+			@include be-ngx-data-table($demo-theme);
+		</span>
+	</div>
 	<ngx-datatable #dataTable class="smart-data-table" [rows]="rows"
 						[columns]="columns" >
 

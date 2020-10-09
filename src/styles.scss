@@ -6,7 +6,7 @@
 
 @import '../projects/be-theme/src/lib/core/theming/all-theme';
 @import '../projects/be-theme/src/lib/core/theming/be-typography';
-@import '../projects/be-theme/src/lib/core/theming/_be-ngx-datatable-theme';
+@import '../projects/be-theme/src/lib/core/theming/be-ngx-datatable-theme';
 
 @include mat-core($fontConfig);
 
@@ -30,4 +30,11 @@ $demo-theme: mat-light-theme($demo-primary, $demo-accent, $demo-warn);
 .be-docs-component-viewer-nav-content a.be-docs-component-viewer-sidenav-item-selected {
 	background-color: mat-color($demo-primary, 100);
 	color: mat-color($demo-primary);
+}
+
+.highlight {
+	padding: 8px;
+    border-radius: 3px;
+	line-height: 1.65;
+	background: mat-color($demo-primary, 50);
 }
