@@ -20,6 +20,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NgxDatatableOverviewComponent } from './pages/components/ngx-datatable/ngx-datatable-overview/ngx-datatable-overview.component';
 import { NgxDatatableApiComponent } from './pages/components/ngx-datatable/ngx-datatable-api/ngx-datatable-api.component';
 import { NgxDatatableExamplesComponent } from './pages/components/ngx-datatable/ngx-datatable-examples/ngx-datatable-examples.component';
+import { StyledMatTableOverviewComponent } from './pages/components/styled-mat-table/styled-mat-table-overview/styled-mat-table-overview.component';
 
 const routes: Routes = [
 	{ path: 'components', component: ComponentsComponent,
@@ -30,6 +31,14 @@ const routes: Routes = [
 					{ path: 'overview', component: NgxDatatableOverviewComponent },
 					{ path: 'api', component: NgxDatatableApiComponent },
 					{ path: 'examples', component: NgxDatatableExamplesComponent },
+					{ path: '', redirectTo: 'overview', pathMatch: 'full' }
+				]
+			},
+			{ path: 'material-table',
+				children: [
+					{ path: 'overview', component: StyledMatTableOverviewComponent },
+					{ path: 'api', component: StyledMatTableOverviewComponent },
+					{ path: 'examples', component: StyledMatTableOverviewComponent },
 					{ path: '', redirectTo: 'overview', pathMatch: 'full' }
 				]
 			},
@@ -50,7 +59,8 @@ const routes: Routes = [
 		ComponentCategorySidenavContentComponent,
 		FooterComponent,
 		NgxDatatableApiComponent,
-		NgxDatatableExamplesComponent
+		NgxDatatableExamplesComponent,
+		StyledMatTableOverviewComponent
 	],
 	imports: [
 		BrowserModule,

@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ComponentCategorySidenavComponent implements OnInit {
 
 	navs = [
-		{ name: 'NGX Datatable', link: 'ngx-datatable' }
+		{ name: 'NGX Datatable', link: 'ngx-datatable' },
+		{ name: 'Material Table', link: 'material-table' }
 	]
 
 	constructor() { }
