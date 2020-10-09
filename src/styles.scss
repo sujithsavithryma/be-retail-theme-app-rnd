@@ -7,6 +7,8 @@
 @import '../projects/be-theme/src/lib/core/theming/all-theme';
 @import '../projects/be-theme/src/lib/core/theming/be-typography';
 @import '../projects/be-theme/src/lib/core/theming/be-ngx-datatable-theme';
+@import '~highlight.js/styles/github.css';
+
 
 @include mat-core($fontConfig);
 

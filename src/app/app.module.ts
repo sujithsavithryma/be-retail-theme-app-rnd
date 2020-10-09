@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { AppComponent } from './app.component';
 // import for dev purpose
@@ -61,7 +62,14 @@ const routes: Routes = [
 		NgxDatatableModule,
 		RouterModule.forRoot(routes)
 	],
-	providers: [],
+	providers: [
+		{
+			provide: HIGHLIGHT_OPTIONS,
+			useValue: {
+			  fullLibraryLoader: () => import('highlight.js'),
+			}
+		  }
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }
