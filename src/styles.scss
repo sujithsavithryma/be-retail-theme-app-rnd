@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 // @import '@be-retail/be-theme/be-theme';
 @import '~@angular/material/theming';
-@import '../dist/be-theme/theming';
-@import '../dist//be-theme/lib/styles/be-typography';
+// @import '../dist/be-theme/theming';
+// @import '../dist//be-theme/lib/styles/be-typography';
+
+@import '../projects/be-theme/src/lib/core/theming/all-theme';
+@import '../projects/be-theme/src/lib/core/theming/be-typography';
 
 @include mat-core($fontConfig);
 

@@ -11,7 +11,7 @@
 @mixin be-material-extended-theme($theme) {
 	@include toolbar-nav-theme($theme);
 	@include be-table-theme($theme);
-
+	@include be-core($theme);
 	@include toolbar-height($toolbar-height);
 }
 
