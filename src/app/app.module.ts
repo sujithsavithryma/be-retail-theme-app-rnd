@@ -14,6 +14,7 @@ import { NgxDatatableComponent } from './pages/components/ngx-datatable/ngx-data
 import { ComponentCategoryListComponent } from './pages/components/component-category-list/component-category-list.component';
 import { ComponentCategorySidenavComponent } from './pages/components/component-category-sidenav/component-category-sidenav.component';
 import { ComponentCategorySidenavContentComponent } from './pages/components/component-category-sidenav-content/component-category-sidenav-content.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 const routes: Routes = [
 	{ path: 'components', component: ComponentsComponent,
@@ -34,7 +35,8 @@ const routes: Routes = [
 		NgxDatatableComponent,
 		ComponentCategoryListComponent,
 		ComponentCategorySidenavComponent,
-		ComponentCategorySidenavContentComponent
+		ComponentCategorySidenavContentComponent,
+		FooterComponent
 	],
 	imports: [
 		BrowserModule,
