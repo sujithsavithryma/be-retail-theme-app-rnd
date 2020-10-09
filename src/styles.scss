@@ -9,7 +9,7 @@
 
 @include mat-core($fontConfig);
 
-$demo-primary: mat-palette($mat-indigo);
+$demo-primary: mat-palette($mat-pink);
 $demo-accent: mat-palette($mat-green, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
