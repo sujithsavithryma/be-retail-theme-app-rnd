@@ -1,12 +1,18 @@
-.title {
+.be-title {
+	border-radius: 0;
+}
+
+.be-title .app-title {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	margin-right: 10px;
+	letter-spacing: 0.0067em;
+	font-size: 15px;
+	font-weight: 500;
 	sup {
 		font-size: 9px;
 		padding-left: 3px;
 		vertical-align: super;
 	}
-	margin-right: 10px;
-}
-
-.be-title {
-	border-radius: 0;
 }

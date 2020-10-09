@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { LanguagePickerComponent } from './language-picker.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
-import { TranslateModule } from '@ngx-translate/core';
 import { MatNativeDateModule } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -17,7 +16,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 		MatMenuModule,
 		MatButtonModule,
 		MatNativeDateModule,
-		TranslateModule.forRoot(),
 		BrowserAnimationsModule
 	],
 	exports: [
