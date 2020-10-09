@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
 	selector: 'app-component-category-sidenav-content',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponentCategorySidenavContentComponent implements OnInit {
 
-	constructor() { }
+	sections = ['Overview', 'Api', 'Examples'];
+	baseName = '';
+	constructor(
+		private router: Router
+	) {
+		this.baseName = this.router.url.split('/')[2];
+	}
 
 	ngOnInit(): void {
 	}

@@ -1,3 +1,16 @@
 <div class="be-docs-component-viewer-nav-content-container">
-	<ng-content></ng-content>
+	<nav mat-tab-nav-bar class="be-docs-component-viewer-tabbed-content"
+		aria-label="Documentation Sections"
+		id="component-viewer"
+		focusOnNavigation >
+	<a mat-tab-link class="be-docs-component-viewer-section-tab"
+		*ngFor="let section of sections"
+		[routerLink]="[baseName, section.toLowerCase()]"
+		routerLinkActive #rla="routerLinkActive"
+		[active]="rla.isActive">{{section}}</a>
+	</nav>
+
+	<div class="be-docs-component-viewer-content">
+		<router-outlet></router-outlet>
+	</div>
 </div>

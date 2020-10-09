@@ -3,3 +3,23 @@
 	font-weight: 400;
     padding: 20px 50px;
 }
+
+
+
+.be-docs-component-viewer-section-tab {
+	text-transform: uppercase;
+}
+
+.be-docs-component-viewer-tabbed-content {
+	margin-bottom: 25px;
+}
+
+.be-docs-component-viewer-content {
+	position: relative;
+	min-height: 500px;
+}
+
+.docs-component-view-text-content {
+	flex-grow: 1;
+	width: 100%;
+}

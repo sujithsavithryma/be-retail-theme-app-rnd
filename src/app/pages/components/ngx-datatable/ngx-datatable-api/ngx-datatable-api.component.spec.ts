@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgxDatatableComponent } from './ngx-datatable.component';
+import { NgxDatatableApiComponent } from './ngx-datatable-api.component';
 
-describe('NgxDatatableComponent', () => {
-  let component: NgxDatatableComponent;
-  let fixture: ComponentFixture<NgxDatatableComponent>;
+describe('NgxDatatableApiComponent', () => {
+  let component: NgxDatatableApiComponent;
+  let fixture: ComponentFixture<NgxDatatableApiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxDatatableComponent ]
+      declarations: [ NgxDatatableApiComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgxDatatableComponent);
+    fixture = TestBed.createComponent(NgxDatatableApiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
