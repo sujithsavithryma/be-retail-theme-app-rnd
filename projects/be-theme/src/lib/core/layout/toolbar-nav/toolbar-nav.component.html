@@ -1,5 +1,5 @@
 <ng-container *ngIf="navStyle === 1">
-	<ul class="be-theme-nav nav-1" *ngIf="mode === 'desktop'">
+	<ul class="be-theme-nav nav-1">
 		<li *ngFor="let nav of navs" matRipple class="list-item" [routerLink]="nav.link"
 			routerLinkActive="nav-active">
 			{{ nav.name }}
@@ -8,7 +8,7 @@
 </ng-container>
 
 <ng-container *ngIf="navStyle === 2">
-	<ul class="be-theme-nav nav-2" *ngIf="mode === 'desktop'">
+	<ul class="be-theme-nav nav-2">
 		<ng-container *ngFor="let menu of navs">
 			<li class="list-item" [routerLink]="menu?.link" routerLinkActive="nav-active">
 				<button mat-button>

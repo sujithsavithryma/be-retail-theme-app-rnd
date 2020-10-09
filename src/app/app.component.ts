@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BeNav } from 'dist/be-theme/lib/core/layout/toolbar-nav/toolbar-nav.model';
 
 @Component({
 	selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'be-theme-app';
+
+	navs: BeNav[] = [
+		{ name: 'Components', link: 'components' }
+	];
 }
