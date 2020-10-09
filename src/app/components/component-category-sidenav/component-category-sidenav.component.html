@@ -1,0 +1,9 @@
+<div class="be-docs-component-viewer-nav">
+	<div class="be-docs-component-viewer-nav-content">
+		<mat-nav-list>
+			<a mat-list-item [routerLink]="nav.link" *ngFor="let nav of navs" routerLinkActive="be-docs-component-viewer-sidenav-item-selected">
+				{{ nav.name }}
+			</a>
+		 </mat-nav-list>
+	</div>
+</div>

@@ -28,6 +28,7 @@
 		"@angular/router": "~10.1.1",
 		"@ngx-translate/core": "^13.0.0",
 		"@ngx-translate/http-loader": "^6.0.0",
+		"@swimlane/ngx-datatable": "^18.0.0",
 		"rxjs": "~6.6.0",
 		"scss-bundle": "^3.1.2",
 		"tslib": "^2.0.0",

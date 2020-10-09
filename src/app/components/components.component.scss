@@ -3,3 +3,14 @@
 	flex-direction: column;
 	height: 100%;
 }
+
+.be-docs-component-sidenav {
+	display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.be-docs-sidenav-body {
+	display: flex;
+    flex: 1 1 auto;
+}
