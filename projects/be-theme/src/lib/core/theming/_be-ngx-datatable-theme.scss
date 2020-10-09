@@ -2,7 +2,7 @@
 
 .smart-data-table {
 	height: calc(100% - 0px);
-
+	font-size: 12px;
 	.datatable-body-cell, .datatable-header-cell {
 		.datatable-body-cell-label, .datatable-header-cell-template-wrap {
 			width: 100%;
@@ -24,7 +24,7 @@
   // overflow-y: auto;
 }
 
-@mixin app-ngx-data-table($theme) {
+@mixin be-ngx-data-table($theme) {
 
 	$primary: map-get($theme, primary);
 

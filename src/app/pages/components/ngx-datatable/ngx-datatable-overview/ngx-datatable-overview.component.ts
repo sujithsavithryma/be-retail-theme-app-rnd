@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgxDatatableOverviewComponent implements OnInit {
 
+	columns = [
+		{ name: 'Price Protection', prop: 'priceProtection' },
+		{ name: 'Designation', prop: 'designation' },
+		{ name: 'Four', prop: 'fourId' },
+		{ name: 'Nom Four', prop: 'fourName' },
+		{ name: 'Date', prop: 'date' },
+		{ name: '', prop: '' }
+	];
+
 	constructor() {
 	}
 

@@ -1,1 +1,110 @@
-<p>ngx-datatable-overview works!</p>
+<div>
+	<ngx-datatable #dataTable class="smart-data-table" [rows]="rows"
+						[columns]="columns" >
+
+						<!-- <ngx-datatable-column name="priceProtection" [resizeable]="false" [sortable]="true"
+							[flexGrow]="2">
+							<ng-template let-column="column" ngx-datatable-header-template let-sort="sortFn">
+								<span (click)="sort()">{{ 'Price Protect./Prod' | translate }}</span>
+							</ng-template>
+							<ng-template let-value="value" let-row="row" let-rowIndex="rowIndex"
+								ngx-datatable-cell-template>
+
+								<div fxLayout="row" (click)="openRow(row, $event)" fxLayoutAlign="start center"
+									class="{{ 'level-' + row.level }}" [class.level-1-value]="row.level === 1">
+									<button mat-icon-button *ngIf="row.children && row.children.length > 0">
+										<mat-icon class="expansion-icon" color="primary">
+											{{ row.isExpanded ? 'expand_more' : 'chevron_right' }}</mat-icon>
+									</button>
+									<button mat-icon-button class="hidden-btn"
+										*ngIf="!row.children || row.children.length === 0">
+										<mat-icon class="expansion-icon" color="primary">article</mat-icon>
+									</button>
+									<span *ngIf="row.level > 1"
+										[class.without-icon]="!row.children || row.children.length">
+										Prod:{{ value }}
+									</span>
+									<span *ngIf="row.level === 1"
+										[class.without-icon]="!row.children || row.children.length">
+										   <span *ngIf="row.isPulsing">PL N°</span>
+										   <span *ngIf="!row.isPulsing">PP N°</span>  {{ value }}
+									</span>
+								</div>
+							</ng-template>
+						</ngx-datatable-column>
+
+						<ngx-datatable-column name="designation" [resizeable]="false" [sortable]="true" [flexGrow]="3">
+							<ng-template let-column="column" ngx-datatable-header-template let-sort="sortFn">
+								<span (click)="sort()">{{ 'Designation' | translate }}</span>
+							</ng-template>
+							<ng-template let-value="value" let-row="row" let-rowIndex="rowIndex"
+								ngx-datatable-cell-template>
+								<span class="ellipsis" title="{{value}}" [class.level-1-value]="row.level === 1">
+									{{ value }}
+								</span>
+							</ng-template>
+						</ngx-datatable-column>
+
+						<ngx-datatable-column name="supplierCode" [resizeable]="false" [sortable]="false"
+							[flexGrow]="1">
+							<ng-template let-column="column" ngx-datatable-header-template let-sort="sortFn">
+								<span (click)="sort()">{{ 'Supplier' | translate }}</span>
+							</ng-template>
+							<ng-template let-value="value" let-row="row" let-rowIndex="rowIndex"
+								ngx-datatable-cell-template>
+								<span [class.level-1-value]="row.level === 1">
+									{{ value }}
+								</span>
+							</ng-template>
+						</ngx-datatable-column>
+
+						<ngx-datatable-column name="supplierName" [resizeable]="false" [sortable]="false"
+							[flexGrow]="2.3">
+							<ng-template let-column="column" ngx-datatable-header-template let-sort="sortFn">
+								<span (click)="sort()">{{ 'SupplierName' | translate }}</span>
+							</ng-template>
+							<ng-template let-value="value" let-row="row" let-rowIndex="rowIndex"
+								ngx-datatable-cell-template>
+								<span class="ellipsis" title="{{value}}" [class.level-1-value]="row.level === 1">
+									{{ value }}
+								</span>
+							</ng-template>
+						</ngx-datatable-column>
+
+						<ngx-datatable-column name="date" [resizeable]="false" [sortable]="true" [flexGrow]="1.2">
+							<ng-template let-column="column" ngx-datatable-header-template let-sort="sortFn">
+								<span (click)="sort()">{{ 'Date' | translate }}</span>
+							</ng-template>
+							<ng-template let-value="value" let-row="row" let-rowIndex="rowIndex"
+								ngx-datatable-cell-template>
+								<span [class.level-1-value]="row.level === 1">
+									{{ value }}
+								</span>
+							</ng-template>
+						</ngx-datatable-column>
+
+						<ngx-datatable-column name="" [resizeable]="false" [sortable]="false" [flexGrow]=".5">
+							<ng-template let-column="column" ngx-datatable-header-template>
+								<span></span>
+							</ng-template>
+							<ng-template let-value="value" let-row="row" let-rowIndex="rowIndex"
+								ngx-datatable-cell-template>
+
+								<button mat-icon-button *ngIf="showAddButton(row)" (click)="createProduct($event, row)">
+									<mat-icon class="mat-icon-hover">add_circle</mat-icon>
+								</button>
+							</ng-template>
+						</ngx-datatable-column>
+
+						<ngx-datatable-footer>
+							<ng-template ngx-datatable-footer-template>
+								<div class="footer-spacing">
+									<div>
+										{{'TotalRecords' | translate}} : {{ totalRows }}
+									</div>
+								</div>
+							</ng-template>
+						</ngx-datatable-footer> -->
+
+					</ngx-datatable>
+</div>

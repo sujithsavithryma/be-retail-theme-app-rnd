@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 import { AppComponent } from './app.component';
 // import for dev purpose
@@ -57,6 +58,7 @@ const routes: Routes = [
 		BeComponentsModule,
 		MatListModule,
 		MatTabsModule,
+		NgxDatatableModule,
 		RouterModule.forRoot(routes)
 	],
 	providers: [],

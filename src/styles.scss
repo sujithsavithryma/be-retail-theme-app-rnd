@@ -6,6 +6,7 @@
 
 @import '../projects/be-theme/src/lib/core/theming/all-theme';
 @import '../projects/be-theme/src/lib/core/theming/be-typography';
+@import '../projects/be-theme/src/lib/core/theming/_be-ngx-datatable-theme';
 
 @include mat-core($fontConfig);
 
@@ -20,6 +21,7 @@ $demo-theme: mat-light-theme($demo-primary, $demo-accent, $demo-warn);
 
 @include angular-material-theme($demo-theme);
 @include be-material-extended-theme($demo-theme);
+@include be-ngx-data-table($demo-theme);
 
 .be-docs-component-viewer-nav-content a:hover {
 	background-color: mat-color($demo-primary, 50);
