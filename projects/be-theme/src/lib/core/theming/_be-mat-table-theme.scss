@@ -1,0 +1,212 @@
+$level-1-bg: #cdd1e9;
+$level-2-bg: #d6d8e1;
+$level-3-bg: #e5e7f2;
+$level-4-bg: #f0f2f8;
+$level-5-bg: #f6f4f4;
+$hover-bg: #a2a2d9;
+@mixin be-table-theme($theme) {
+	$primary: map-get($theme, primary);
+	.mat-header-cell {
+		background-color: mat-color($primary);
+		color: white;
+		font-weight: 400;
+	}
+
+	td.mat-cell {
+		a.all-hypers {
+			text-decoration: underline;
+			color: mat-color($primary);
+			padding: 0;
+		}
+	}
+
+	tr.level-1 {
+		background-color: $level-1-bg;
+	}
+
+	tr.level-2 {
+		background-color: $level-2-bg;
+	}
+
+	tr.level-3 {
+		background-color: $level-3-bg;
+	}
+
+	tr.level-4 {
+		background-color: $level-4-bg;
+	}
+
+	tr.level-5 {
+		background-color: $level-5-bg;
+	}
+
+	tr:hover {
+		background-color: $hover-bg;
+	}
+
+}
+
+$table-border-color: #efefef;
+
+.table-container {
+	table {
+		td, th {
+			padding-left: 10px;
+			border-color: transparent;
+			padding-right: 5px;
+			border-right: 1px solid white;
+		}
+
+		td {
+			border-bottom: 1px solid white;
+		}
+
+		td:last-of-type, th:last-of-type {
+			border-right-color: transparent;
+		}
+
+		th.mat-header-cell:first-of-type {
+			padding-left: 10px;
+		}
+
+		th.mat-header-cell:last-of-type {
+			padding-right: 10px;
+		}
+
+		td.mat-cell, td.mat-footer-cell {
+			&:last-of-type {
+				padding-right: 10px;
+			}
+			&:first-of-type {
+				padding-left: 10px;
+			}
+		}
+
+		.mat-sort-header-arrow {
+			color: #fff;
+		}
+
+		.mat-row.active {
+			color: white;
+			background: #bdc7d4;
+		}
+
+		tr.mat-header-row {
+			height: 36px;
+		}
+
+		tr.mat-row, tr.mat-footer-row, .null-record {
+			height: 36px;
+			cursor: pointer;
+		}
+
+		th.grouped-column {
+			border-right: 1px solid $table-border-color;
+			border-bottom: 1px solid $table-border-color;
+			text-align: center;
+		}
+
+		th.right-border-none {
+			border-right: none;
+		}
+
+		th.right-border {
+			border-right: 1px solid $table-border-color;
+		}
+
+		th.bottom-border {
+			border-bottom: 1px solid $table-border-color;
+		}
+
+		th.designation, td.designation {
+			min-width: 210px;
+			max-width: 210px;
+			width: 210px;
+		}
+
+		th.name {
+			min-width: 80px;
+			max-width: 100px;
+			width: 80px;
+		}
+
+		th.code, td.code {
+			min-width: 100px;
+			max-width: 120px;
+			width: 100px;
+		}
+
+		th.price {
+			min-width: 45px;
+			max-width: 45px;
+			width: 45px;
+		}
+
+		th.hash, th.actions {
+			min-width: 30px;
+			max-width: 30px;
+			width: 30px;
+		}
+
+		th.range-ca {
+			max-width: 60px;
+			width: 60px;
+		}
+
+		td.mat-cell {
+
+			&.level-2 {
+				padding-left: 15px;
+			}
+			&.level-3 {
+				padding-left: 25px;
+			}
+			&.level-4 {
+				padding-left: 35px;
+			}
+			&.level-5 {
+				padding-left: 60px;
+			}
+
+			&.red {
+				color: #ff0000;
+				font-weight: 600;
+			}
+			&.orange {
+				color: #dd7000 ;
+				font-weight: 600;
+			}
+			&.green {
+				color: #128f02;
+			}
+			&.level-1 {
+				font-weight: 600;
+			}
+		}
+
+		tr:hover {
+			td.mat-cell {
+				&.red {
+					color: #000;
+					font-weight: 600;
+				}
+				&.orange {
+					color: #000 ;
+					font-weight: 600;
+				}
+				&.green {
+					color: #000;
+				}
+			}
+		}
+
+	}
+
+	.mat-sort-header-container {
+		justify-content: space-between;
+	}
+
+	.mat-sort-header-button:focus, .mat-sort-header-button:active {
+		outline: none;
+	}
+}
