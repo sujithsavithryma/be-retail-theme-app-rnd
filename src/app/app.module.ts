@@ -8,12 +8,12 @@ import { AppComponent } from './app.component';
 import { BeLayoutModule } from 'projects/be-theme/src/lib/core/layout/publi-api';
 import { BeComponentsModule } from 'projects/be-theme/src/lib/core/components/public-api';
 import { RouterModule, Routes } from '@angular/router';
-import { ComponentsComponent } from './components/components.component';
-import { ComponentPageHeaderComponent } from './components/component-page-header/component-page-header.component';
-import { NgxDatatableComponent } from './components/ngx-datatable/ngx-datatable.component';
-import { ComponentCategoryListComponent } from './components/component-category-list/component-category-list.component';
-import { ComponentCategorySidenavComponent } from './components/component-category-sidenav/component-category-sidenav.component';
-import { ComponentCategorySidenavContentComponent } from './components/component-category-sidenav-content/component-category-sidenav-content.component';
+import { ComponentsComponent } from './pages/components/components.component';
+import { ComponentPageHeaderComponent } from './pages/components/component-page-header/component-page-header.component';
+import { NgxDatatableComponent } from './pages/components/ngx-datatable/ngx-datatable.component';
+import { ComponentCategoryListComponent } from './pages/components/component-category-list/component-category-list.component';
+import { ComponentCategorySidenavComponent } from './pages/components/component-category-sidenav/component-category-sidenav.component';
+import { ComponentCategorySidenavContentComponent } from './pages/components/component-category-sidenav-content/component-category-sidenav-content.component';
 
 const routes: Routes = [
 	{ path: 'components', component: ComponentsComponent,
