@@ -19,6 +19,8 @@ export class NgxDatatableOverviewComponent implements OnInit {
 	code = `<ngx-datatable #dataTable class="smart-data-table" [rows]="rows"
 	[columns]="columns" >`;
 
+	rows = [];
+
 	constructor() {
 	}
 
