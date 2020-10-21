@@ -10,6 +10,7 @@ export class AppComponent {
 	title = 'be-theme-app';
 
 	navs: BeNav[] = [
-		{ name: 'Components', link: 'components' }
+		{ name: 'Components', link: 'components' },
+		{ name: 'Feature-Page', link: 'feature-page' },
 	];
 }

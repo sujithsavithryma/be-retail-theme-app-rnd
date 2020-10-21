@@ -21,6 +21,10 @@ import { NgxDatatableOverviewComponent } from './pages/components/ngx-datatable/
 import { NgxDatatableApiComponent } from './pages/components/ngx-datatable/ngx-datatable-api/ngx-datatable-api.component';
 import { NgxDatatableExamplesComponent } from './pages/components/ngx-datatable/ngx-datatable-examples/ngx-datatable-examples.component';
 import { StyledMatTableOverviewComponent } from './pages/components/styled-mat-table/styled-mat-table-overview/styled-mat-table-overview.component';
+import { FeaturePageComponent } from './pages/feature-page/feature-page.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from './shared/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
 	{ path: 'components', component: ComponentsComponent,
@@ -45,6 +49,7 @@ const routes: Routes = [
 			{ path: '', redirectTo: 'categories', pathMatch: 'full' }
 		]
 	},
+	{ path: 'feature-page', component: FeaturePageComponent },
 	{ path: '', redirectTo: 'components', pathMatch: 'full' }
 ];
 
@@ -60,16 +65,20 @@ const routes: Routes = [
 		FooterComponent,
 		NgxDatatableApiComponent,
 		NgxDatatableExamplesComponent,
-		StyledMatTableOverviewComponent
+		StyledMatTableOverviewComponent,
+		FeaturePageComponent
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		// BeThemeModule,
 		BeLayoutModule,
 		BeComponentsModule,
 		MatListModule,
 		MatTabsModule,
 		NgxDatatableModule,
+		FlexLayoutModule,
+		MaterialModule,
 		RouterModule.forRoot(routes)
 	],
 	providers: [

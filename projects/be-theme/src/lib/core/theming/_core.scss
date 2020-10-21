@@ -1,4 +1,5 @@
 @import 'be-variables';
+@import 'be-material-select-box-ext';
 
 @mixin be-core($theme) {
 	$primary: map-get($theme, primary);
@@ -30,7 +31,13 @@
 		color: mat-color($primary, default-contrast);
 	}
 
-	.be-sub-header {
-		background-color: mat-color($background, app-bar);
+	.be-secondary-header {
+		padding: $toolbar-padding;
+		background-color: mat-color($background, selected-button);
+		min-height: 40px;
+	}
+
+	.be-page-container {
+		padding: $toolbar-padding;
 	}
 }

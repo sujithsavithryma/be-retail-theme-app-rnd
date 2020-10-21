@@ -1,5 +1,5 @@
 {
-	"name": "@be-retail/be-theme",
+	"name": "be-retail-theme",
 	"version": "0.0.1",
 	"peerDependencies": {
 		"@angular/common": "^10.1.3",
